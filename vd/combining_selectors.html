@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            combining selectors
+        </title>
+    <style>
+        p.big{
+            font-size: 20px;
+        }
+
+        article>p{
+            color: blue;
+        }
+        p1 p{
+            color: crimson;
+        }
+        div.big p{
+            color: rgb(19, 83, 48);
+        }
+
+    </style>
+    </head>
+
+    <body>
+        <h1>
+            vd1 p.big {font-size: 20px;} and article>p {color: blue};
+        </h1>
+        <p class="big">(p class=big) affected text (20px)</p>
+
+        <div class="big"><p>(div class=big) unaffected text</p></div>
+
+        <article>
+            <p>&lt;p&gt; inside article is affected</p>
+        </article>
+        <p>&lt;p&gt; outside article is unaffected</p>
+        <article>
+            <div><p>&lt;p&gt; inside article but not directly child is unaffected</p></div>
+        </article>
+
+        <h1>
+            vd2 p1 p {color: crimson;}
+        </h1>
+        <p1>
+            <p>&lt;p&gt; inside article is affected</p>
+        </article>
+        <p1>
+            &lt;p&gt; outside article is unaffected</p>
+        </p>
+        <p1>
+            <div><p>&lt;p&gt; inside article but not directly child is affected</p></div>
+        </p1>
+
+    </body>
+    
+</html>

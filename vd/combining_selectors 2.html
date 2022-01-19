@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            combining selectors 2
+        </title>
+    <style>
+        p.big{
+            font-size: 20px;
+        }
+
+        article>.colored{
+            color: blue;
+        }
+        .colored p{
+            color: crimson;
+        }
+        .c1.c2{
+            color: deeppink;
+        }
+    </style>
+    </head>
+
+    <body>
+        <h1>
+            vd1 p.big {font-size: 20px;} and article>.colored {color: blue};
+        </h1>
+        <p class="big">(p class=big) affected text (20px)</p>
+        <div class="big">(div class=big) unaffected text</div>
+
+        <article>
+            <p class="colored"> &lt;p&gt; inside article is affected </p>
+        </article>
+
+        <p class="colored">
+            &lt;p&gt; outside article is unaffected</p>
+        </p>
+
+        <article class="colored">
+            <div><p>&lt;p&gt; inside article but not directly child is unaffected</p></div>
+        </article>
+
+        <h1>
+            vd2 colored p {color: crimson;}
+        </h1>
+
+        <p1 class="colored">
+            <p>&lt;p&gt; inside article is affected</p>
+        </p1>
+
+        <p>&lt;p&gt; outside article is unaffected</p>
+
+        <p1 class="colored">
+            <div><p>&lt;p&gt; inside article but not directly child is affected</p></div>
+        </p1>
+        <h1 class="c1 c2">example with 2 class</h1>
+    </body>
+    
+</html>
