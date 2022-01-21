@@ -2,3 +2,9 @@ div{
     background-color: gray;
     font-size: 130%;
 }
+div #myParag{
+    color: blue;
+}
+div.big p{
+    color:green;
+}
