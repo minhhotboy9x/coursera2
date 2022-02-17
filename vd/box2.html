@@ -3,25 +3,31 @@
     <head>
         <meta charset="utf-8">
         <title>
-            the box model
+            the box model2
         </title>
         <style>
+            * {
+                box-sizing: border-box;
+                margin: 0px;
+                padding: 0px;
+            }
             body{
-                margin: 0;
                 background-color: gray;
-                padding: 0;
-                
+
             }
             #box{
                 background-color: blue;
                 padding: 20px 20px 20px 20px;
                 border: 10px solid black;
                 margin: 40px;
-                width: 200px;
-                box-sizing: border-box;
+                width: 400px;
+                margin-top: 40px;
             }
             #content{
                 background-color: #90EE90;
+            }
+            h1{
+                margin-bottom: 100px;
             }
         </style>
     </head>
