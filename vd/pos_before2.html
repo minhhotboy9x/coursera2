@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>positioning 2</title>
+        <style>
+            *{
+                box-sizing: border-box;
+                margin: 0;
+                padding: 0;
+            }
+            div{
+                position: relative;
+                background-color: #00FFFF;
+            }
+            p {
+                width: 50px;
+                height: 50px;
+                border: 1px solid black;
+                margin-bottom: 15px;
+            }
+            #p1 {
+                background-color: #A52A2A;
+                position: relative;
+                left: 65px;
+                top: 65px;
+            }
+            #p2 {
+                background-color: #DEB887; 
+            }
+            #p3 {
+                background-color: #5f9ea0;
+                position: absolute;
+                top: 0px;
+                left: 0px;
+            }
+            #p4 {
+                background-color: #FF7F50;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>
+            Floating element
+        </h1>
+        <div>
+            <p id="p1"></p>
+            <p id="p2"></p>
+            <p id="p3"></p>
+            <p id="p4"></p>
+        </div>
+
+    </body>
+</html>
